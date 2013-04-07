@@ -25,12 +25,23 @@ else
 <head>
 	<title>Facebook Login Page</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="http://alpeshfbapprtcamp.comuv.com/Facebook/fb.css" media="screen" />
+
+	<!--<link rel="stylesheet" type="text/css" href="http://alpeshfbapprtcamp.comuv.com/Facebook/fb.css" media="screen" />-->
+        
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">	
+	<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="bootstrap/css/myBootstrap.css" rel="stylesheet">
+
 </head>
 <body>
-	<h2 align="center"> This application lets you access and download your facebook albums.</h2>
-	<a href="<?php echo $loginUrl; ?>"><img id="fbimg" src="facebook-icon.jpg"/></a>		
-	<h4>Developed by Alpesh Prajapati.</h4>
+	<h3 align="center"> This application lets you access and download your facebook albums.</h3>
+	<a href="<?php echo $loginUrl; ?>" class="btn btn-primary fbconnect">Connect with Facebook</a>		
+	<h4 id="author">Developed by Alpesh Prajapati.</h4>
+
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
  
