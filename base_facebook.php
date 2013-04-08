@@ -591,7 +591,7 @@ abstract class BaseFacebook
       'dialog/oauth',
       array_merge(array(
                     'client_id' => $this->getAppId(),
- 		    'redirect_uri' => 'http://alpeshfbapprtcamp.comuv.com/Facebook/Login.php',
+ 		    'redirect_uri' => 'http://alpeshfbapprtcamp.comuv.com/Facebook/index.php',
                     'state' => $this->state),
                   $params));
   }
@@ -1192,7 +1192,7 @@ abstract class BaseFacebook
     $protocol = $this->getHttpProtocol() . '://';
     $host = $this->getHttpHost();
     $currentUrl = $protocol.$host.$_SERVER['REQUEST_URI'];
-    //$currentUrl = $protocol.$host.'/Facebook/login.php'; // my homepage
+    //$currentUrl = $protocol.$host.'/Facebook/index.php'; // my homepage
     $parts = parse_url($currentUrl);
 
     $query = '';

@@ -10,7 +10,6 @@ $album_id = $_GET['album_id'];
 $photos = $facebook->api("/{$album_id}/photos"); // get that one album
 $error = ""; //error holder
 
-//$file_folder = "c:/xampp/htdocs/Facebook/"; // folder to load files..//$zip_name = "downloadAlbum.zip";
 if(extension_loaded('zip'))
 {
 	$zip = new ZipArchive();
@@ -19,14 +18,12 @@ if(extension_loaded('zip'))
 	{
 		$error .= "* Sorry ZIP creation failed at this time";
 	}
-	$counter = 0;
 	foreach($photos['data'] as $photo)
 	{
-		$counter++;
 		$url=$photo['source'];
-	        $ch = curl_init($url);
-	        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	        $download_file = curl_exec($ch);
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $download_file = curl_exec($ch);
 		$file = fopen($photo['id'].".jpg","w");
 		fwrite($file,$download_file);
 		fclose($file);

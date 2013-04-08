@@ -2,15 +2,17 @@
 session_start();
 require_once("facebook.php");
 require_once("fbConfig.php");
+
 $facebook = unserialize($_SESSION['fbobject']);
 $_SESSION['fbobject'] = serialize($facebook);
 $album_id = $_GET['album_id']; // get that one album
 $photos = $facebook->api("/{$album_id}/photos");  //All photos of that album
 ?>
+
 <html>	
 <head>
 	<title>Album Slideshow</title>	
-	<!-- Add jQuery library -->
+	<!-- Add FancyBox jQuery library -->
 	<script type="text/javascript" src="http://alpeshfbapprtcamp.comuv.com/Facebook/fancyBox/lib/jquery-1.9.0.min.js"></script>		
 	<script type="text/javascript" src="http://alpeshfbapprtcamp.comuv.com/Facebook/fancyBox/source/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="http://alpeshfbapprtcamp.comuv.com/Facebook/fancyBox/source/jquery.fancybox.js"></script>	
@@ -36,9 +38,8 @@ $photos = $facebook->api("/{$album_id}/photos");  //All photos of that album
 					'changeFade'    : 0
 				})
 			});			
-	</script>
-        <link rel="stylesheet" type="text/css" href="http://alpeshfbapprtcamp.comuv.com/Facebook/fancyBox/source/jquery.fancybox.css?v=2.1.4" media="screen" />
-	<link rel="stylesheet" type="text/css" href="http://alpeshfbapprtcamp.comuv.com/Facebook/fb.css" media="screen" />	
+	</script>    
+	<link rel="stylesheet" type="text/css" href="http://alpeshfbapprtcamp.comuv.com/Facebook/fancyBox/source/jquery.fancybox.css?v=2.1.4" media="screen" />
 </head>
 <body>
 </body>

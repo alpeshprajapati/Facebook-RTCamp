@@ -1,17 +1,66 @@
-h3{
+body
+{
+	background: url('../../Images/green/pattern-4.png');
+	color: white;
+}
+
+/*Index Page*/
+h3
+{
 	margin-top:15%;
 }
 
-.fbconnect
+#fbconnect
 {
 	margin-left:41%;
 }
 
 #author{
 	margin-top: 21%;
-	margin-left: 38%;
+	margin-left: 40%;
 }
 
-body{
-	background: url('../../Images/green.jpg');
+#divName
+{
+	color: white;
+	font-size: 22px;
+    margin-left: 38%;
+}
+
+#logout
+{
+   margin-left: 90%;
+   font-size: 18px;
+}
+
+a
+{
+	color:violet;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color:lightblue;
+	text-decoration: none;
+}
+
+/*Success.php Page*/
+#container{
+	margin-top: 4%;
+	margin-left: 16%;
+	border: 5px white solid;
+	width: 65%;
+	height: auto;
+	padding: 30px
+}
+
+h4,p
+{
+	text-align: center;
+}
+
+.download
+{
+	margin-left: 26%;
 }
