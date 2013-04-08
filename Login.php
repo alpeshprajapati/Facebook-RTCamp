@@ -36,6 +36,13 @@ else
 
 </head>
 <body>
+	<div class="navbar" id="navbar">
+            <div class="navbar-inner">
+                <div class="container" style="width: auto;">                    
+                    <a class="brand" href="#">Facebook Album Slideshow & Download</a>                    
+                </div>
+            </div><!-- /navbar-inner -->
+    	</div>
 	<h3 align="center"> This application lets you access and download your facebook albums.</h3>
 	<a href="<?php echo $loginUrl; ?>" class="btn btn-primary fbconnect">Connect with Facebook</a>		
 	<h4 id="author">Developed by Alpesh Prajapati.</h4>
