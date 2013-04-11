@@ -24,7 +24,7 @@ h3
 {
 	color: white;
 	font-size: 22px;
-    margin-left: 38%;
+    margin-left: 40%;
 }
 
 #logout
@@ -47,8 +47,7 @@ a:hover
 
 /*Success.php Page*/
 #container{
-	margin-top: 4%;
-	margin-left: 16%;
+	margin: 20 auto;
 	border: 5px white solid;
 	width: 65%;
 	height: auto;
